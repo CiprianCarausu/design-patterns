@@ -1,17 +1,18 @@
 package singleton;
 
-import com.sun.corba.se.impl.protocol.INSServerRequestDispatcher;
+// Double Checked Looking or "classic" singletone.
 
 public class LazyRegisteryWithDCL {
 
-    private LazyRegisteryWithDCL(){}
+    private LazyRegisteryWithDCL() {
+    }
 
     private static volatile LazyRegisteryWithDCL INSTANCE;
 
-    public static LazyRegisteryWithDCL getInstance(){
-        if(INSTANCE == null){
-            synchronized (LazyRegisteryWithDCL.class){
-                if(INSTANCE == null){
+    public static LazyRegisteryWithDCL getInstance() {
+        if (INSTANCE == null) {
+            synchronized (LazyRegisteryWithDCL.class) {
+                if (INSTANCE == null) {
                     INSTANCE = new LazyRegisteryWithDCL();
                 }
             }
