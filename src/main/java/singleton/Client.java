@@ -9,5 +9,9 @@ public class Client {
 
         System.out.println(registery == registery2);
 
+        LazyRegisteryWithDCL lazySingleton = LazyRegisteryWithDCL.getInstance();
+        LazyRegisteryWithDCL lazySingleton2 = LazyRegisteryWithDCL.getInstance();
+
+        System.out.println(lazySingleton == lazySingleton2);
     }
 }
