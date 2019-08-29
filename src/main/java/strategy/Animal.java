@@ -8,6 +8,8 @@ public class Animal {
     private double speed;
     private String sound;
 
+    public Flys flyingType;
+
     public void setname(String newName) {
         name = newName;
     }
@@ -58,6 +60,14 @@ public class Animal {
 
     public String getSound() {
         return sound;
+    }
+
+    public String tryToFly(){
+        return flyingType.fly();
+    }
+
+    public void setFlyingAbilities(Flys newFlyType){
+        flyingType = newFlyType;
     }
 
 
