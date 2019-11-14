@@ -10,7 +10,7 @@ public class AnimaPlay {
         System.out.println("Dog: " + cuteBoy.tryToFly());
         System.out.println("Bird: " + annoyingChip.tryToFly());
 
-        cuteBoy.setFlyingAbilities(new Flys.itFlys());
+        cuteBoy.setFlyingAbilities(new itFlys());
 
         System.out.println("Dog: " + cuteBoy.tryToFly());
     }

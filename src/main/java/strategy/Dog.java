@@ -11,6 +11,6 @@ public class Dog extends Animal {
 
         setSound("Bark");
 
-        flyingType = new Flys.cannotFly();
+        flyingType = new cannotFly();
     }
 }

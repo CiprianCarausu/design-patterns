@@ -7,7 +7,7 @@ public class Bird extends Animal {
 
         setSound("ChipChip");
 
-        flyingType = new Flys.itFlys();
+        flyingType = new itFlys();
     }
 
 }
