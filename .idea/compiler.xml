@@ -9,6 +9,7 @@
         <module name="designPatterns" />
         <module name="delete" />
         <module name="design-patterns" />
+        <module name="Projects_" />
       </profile>
     </annotationProcessing>
   </component>
